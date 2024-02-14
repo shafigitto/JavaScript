@@ -14,37 +14,68 @@
 
 
 
-let empName = "Shafi"
-let age = 23
-let isEmployed = true
-let certification = null
-let javascriptCourse;
-let id = Symbol("123")
-let newId = Symbol("123")
-let money = 12237363947655289n
+// let empName = "Shafi"
+// let age = 23
+// let isEmployed = true
+// let certification = null
+// let javascriptCourse;
+// let id = Symbol("123")
+// let newId = Symbol("123")
+// let money = 12237363947655289n
 
-// console.log(id === newId)  // false
+// // console.log(id === newId)  // false
 
-let courses = ["HTML", "CSS", "JS"]
-let myObject = {
-    CompanyName : "Shufey",
-    age : 23,
-    Id : 112233
+// let courses = ["HTML", "CSS", "JS"]
+// let myObject = {
+//     CompanyName : "Shufey",
+//     age : 23,
+//     Id : 112233
+// }
+
+
+// let myFunction = function(){
+//     console.log("Hello World")
+// }
+
+// console.log(typeof empName)           // string
+// console.log(typeof age)               // number
+// console.log(typeof isEmployed)        // boolean
+// console.log(typeof certification)     // object
+// console.log(typeof javascriptCourse)  // undefined
+// console.log(typeof id)                // symbol
+// console.log(typeof newId)             // symbol
+// console.log(typeof money)             // bigint
+// console.log(typeof courses)           // object
+// console.log(typeof myObject)          // object
+// console.log(typeof myFunction)        // function
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// There are two types of memhory
+// Stack (primitive)  ,  Heap (Non primitive)
+
+
+let myName = "Shafi"
+
+let myNickname = myName
+myNickname = "Shufey"
+
+console.log(myName)
+console.log(myNickname)
+
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : 1222333
 }
 
+let userTwo = userOne
 
-let myFunction = function(){
-    console.log("Hello World")
-}
+userTwo.email = "shafi@gmail.com"
 
-console.log(typeof empName)           // string
-console.log(typeof age)               // number
-console.log(typeof isEmployed)        // boolean
-console.log(typeof certification)     // object
-console.log(typeof javascriptCourse)  // undefined
-console.log(typeof id)                // symbol
-console.log(typeof newId)             // symbol
-console.log(typeof money)             // bigint
-console.log(typeof courses)           // object
-console.log(typeof myObject)          // object
-console.log(typeof myFunction)        // function
+console.log(userOne.email)
+console.log(userTwo.email)
