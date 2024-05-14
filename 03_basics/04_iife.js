@@ -2,7 +2,7 @@
 
 // ()(); 
 
-// function in a paranthesis with a exucation paranthesis must end with semicolon
+// function in a paranthesis with a execution paranthesis must end with semicolon
 
 // why to use IIFE ?  to overcome pollution from global scope
 
